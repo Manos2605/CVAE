@@ -134,5 +134,4 @@ Ce projet est sous licence MIT. Utilisez-le librement pour des fins éducatives 
 
 ## Auteur
 
-[Votre nom] - Projet pour le cours "Fonctionnement d'un laboratoire de création artistique" (AIA-3).</content>
-<parameter name="filePath">c:\Users\sonwa\OneDrive\Documents\Art Numérique\AIA-3\Semestres 1\Fonctionnement d'un laboratoire de création artidtique\CVAE\README.md
+Projet pour le cours "Fonctionnement d'un laboratoire de création artistique" (AIA-3).</content>
