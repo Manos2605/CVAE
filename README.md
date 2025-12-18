@@ -128,10 +128,6 @@ Après entraînement, le modèle peut :
 - Optimiser les performances avec des GPUs.
 - Évaluer la qualité des générations avec des métriques (FID, Inception Score).
 
-## Licence
-
-Ce projet est sous licence MIT. Utilisez-le librement pour des fins éducatives ou artistiques.
-
 ## Auteur
 
 Projet pour le cours "Fonctionnement d'un laboratoire de création artistique" (AIA-3).</content>
