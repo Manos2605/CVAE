@@ -4,26 +4,54 @@ Ce projet utilise un modèle d'Intelligence Artificielle basé sur un Auto-Encod
 
 ## Exemples de Visualisations GIF
 
-Voici quelques exemples de GIFs générés par le modèle après entraînement. Ces animations montrent l'exploration créative de l'espace latent pour différentes ambiances :
+Voici les GIFs d'interpolation latente générés par le modèle pour chaque ambiance. Ces animations montrent des transitions fluides entre deux points aléatoires dans l'espace latent, créant des évolutions artistiques uniques pour chaque palette de couleurs :
 
-### Exploration circulaire dans l'ambiance "Chaud"
-Un mouvement fluide dans l'espace latent génère des variations d'art abstrait avec des tons chauds (rouges, oranges).  
+### Interpolation dans l'ambiance "Chaud"
+Transition avec des tons chauds (rouges, oranges, jaunes).  
 <div align="center">
-  <img src="interpolation_Chaud.gif" alt="Exploration Chaud" width="400">
+  <img src="images/interpolation_Chaud.gif" alt="Interpolation Chaud" width="400">
   <p><em>Exécutez le code pour générer ce GIF</em></p>
 </div>
 
-### Interpolation linéaire dans l'ambiance "Froid"
-Transition douce entre deux points latents, créant une évolution artistique avec des couleurs froides (bleus, violets).  
+### Interpolation dans l'ambiance "Froid"
+Transition avec des tons froids (bleus, violets, cyans).  
 <div align="center">
-  <img src="interpolation_Froid.gif" alt="Interpolation Froid" width="400">
+  <img src="images/interpolation_Froid.gif" alt="Interpolation Froid" width="400">
+  <p><em>Exécutez le code pour générer ce GIF</em></p>
+</div>
+
+### Interpolation dans l'ambiance "Lumineux"
+Transition avec des images très claires et lumineuses.  
+<div align="center">
+  <img src="images/interpolation_Lumineux.gif" alt="Interpolation Lumineux" width="400">
+  <p><em>Exécutez le code pour générer ce GIF</em></p>
+</div>
+
+### Interpolation dans l'ambiance "Neutre"
+Transition avec des couleurs faiblement saturées et neutres.  
+<div align="center">
+  <img src="images/interpolation_Neutre.gif" alt="Interpolation Neutre" width="400">
+  <p><em>Exécutez le code pour générer ce GIF</em></p>
+</div>
+
+### Interpolation dans l'ambiance "Sombre"
+Transition avec des images très foncées.  
+<div align="center">
+  <img src="images/interpolation_Sombre.gif" alt="Interpolation Sombre" width="400">
+  <p><em>Exécutez le code pour générer ce GIF</em></p>
+</div>
+
+### Interpolation dans l'ambiance "Végétal"
+Transition avec des tons verts et végétalisés.  
+<div align="center">
+  <img src="images/interpolation_Végétal.gif" alt="Interpolation Végétal" width="400">
   <p><em>Exécutez le code pour générer ce GIF</em></p>
 </div>
 
 ### Espace latent visualisé
 Projection 2D des représentations latentes colorées par classe d'ambiance.  
 <div align="center">
-  <img src="espace_latent.png" alt="Espace Latent" width="400">
+  <img src="images/espace_latent.png" alt="Espace Latent" width="400">
   <p><em>Graphique généré automatiquement</em></p>
 </div>
 
@@ -38,7 +66,7 @@ Ces visualisations illustrent la capacité du CVAE à produire de l'art original
 
 ## Technologies utilisées
 
-- **Python 3.x**
+- **Python**
 - **TensorFlow/Keras** : Pour le modèle CVAE
 - **OpenCV** : Analyse d'images et couleurs
 - **NumPy, Matplotlib, PIL** : Traitement et visualisation
@@ -47,20 +75,13 @@ Ces visualisations illustrent la capacité du CVAE à produire de l'art original
 
 ## Installation
 
-1. **Cloner le repository** :
-   ```bash
-   git clone <url-du-repo>
-   cd <nom-du-repo>
-   ```
-
-2. **Installer les dépendances** :
+1. **Installer les dépendances** :
    ```bash
    pip install kagglehub opencv-python numpy matplotlib tensorflow pillow imageio
    ```
 
 3. **Télécharger le dataset** :
    - Le notebook télécharge automatiquement le dataset depuis Kaggle via `kagglehub`.
-   - Assurez-vous d'avoir configuré votre clé API Kaggle si nécessaire.
 
 ## Utilisation
 
@@ -76,8 +97,8 @@ Ces visualisations illustrent la capacité du CVAE à produire de l'art original
 3. **Configurations principales** :
    - `IMAGE_SIZE = 128` : Taille des images.
    - `LATENT_DIM = 128` : Dimension de l'espace latent.
-   - `EPOCHS = 100` : Nombre d'époques d'entraînement.
-   - `BATCH_SIZE = 64` : Taille des batches.
+   - `EPOCHS = 200` : Nombre d'époques d'entraînement.
+   - `BATCH_SIZE = 32` : Taille des batches.
 
 ## Structure du projet
 
@@ -101,7 +122,7 @@ Les images sont classées selon :
 
 - **Générer des images** :
   ```python
-  generer(cvae, "Chaud", 5)  # Génère 5 images pour l'ambiance "Chaud"
+  generer(cvae, "Chaud", 10)  # Génère 5 images pour l'ambiance "Chaud"
   ```
 
 - **Créer un GIF d'exploration** :
@@ -127,10 +148,6 @@ Après entraînement, le modèle peut :
 - Intégrer d'autres styles artistiques ou datasets.
 - Optimiser les performances avec des GPUs.
 - Évaluer la qualité des générations avec des métriques (FID, Inception Score).
-
-## Licence
-
-Ce projet est sous licence MIT. Utilisez-le librement pour des fins éducatives ou artistiques.
 
 ## Auteur
 
