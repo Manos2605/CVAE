@@ -2,6 +2,45 @@
 
 Ce projet utilise un modèle d'Intelligence Artificielle basé sur un Auto-Encodeur Variationnel Conditionnel (CVAE) pour générer des images d'art abstrait en fonction d'ambiances colorées. Le modèle apprend à créer de nouvelles œuvres artistiques en analysant un dataset d'art abstrait et en classifiant les images par catégories d'ambiance (Chaud, Froid, Lumineux, etc.).
 
+### Espace latent visualisé
+Projection 2D des représentations latentes colorées par classe d'ambiance.  
+<div style="display: flex; justify-content: center; gap: 40px;">
+  <div align="center">
+    <img src="images/nuage_point_dataset_brut.png" alt="Espace Latent">
+    <p><em>Graphique généré automatiquement</em></p>
+  </div>
+  <div align="center">
+    <img src="images/espace_latent.png" alt="Espace Latent">
+    <p><em>Graphique généré automatiquement</em></p>
+  </div>
+</div>
+
+## Exemples d'image après reconstruction
+<div align="center">
+  <img src="images/générer/chaud.png" alt="Chaud">
+  <p><em>Graphique généré automatiquement</em></p>
+</div>
+<div align="center">
+  <img src="images/générer/froid.png" alt="Chaud">
+  <p><em>Graphique généré automatiquement</em></p>
+</div>
+<div align="center">
+  <img src="images/générer/lumineux.png" alt="Chaud">
+  <p><em>Graphique généré automatiquement</em></p>
+</div>
+<div align="center">
+  <img src="images/générer/neutre.png" alt="Chaud">
+  <p><em>Graphique généré automatiquement</em></p>
+</div>
+<div align="center">
+  <img src="images/générer/sombre.png" alt="Chaud">
+  <p><em>Graphique généré automatiquement</em></p>
+</div>
+<div align="center">
+  <img src="images/générer/végétal.png" alt="Chaud">
+  <p><em>Graphique généré automatiquement</em></p>
+</div>
+
 ## Exemples de Visualisations GIF
 
 Voici les GIFs d'interpolation latente générés par le modèle pour chaque ambiance. Ces animations montrent des transitions fluides entre deux points aléatoires dans l'espace latent, créant des évolutions artistiques uniques pour chaque palette de couleurs :
@@ -9,51 +48,45 @@ Voici les GIFs d'interpolation latente générés par le modèle pour chaque amb
 ### Interpolation dans l'ambiance "Chaud"
 Transition avec des tons chauds (rouges, oranges, jaunes).  
 <div align="center">
-  <img src="images/interpolation_Chaud.gif" alt="Interpolation Chaud" width="400">
+  <img src="gif/interpolation_Chaud.gif" alt="Interpolation Chaud" width="400">
   <p><em>Exécutez le code pour générer ce GIF</em></p>
 </div>
 
 ### Interpolation dans l'ambiance "Froid"
 Transition avec des tons froids (bleus, violets, cyans).  
 <div align="center">
-  <img src="images/interpolation_Froid.gif" alt="Interpolation Froid" width="400">
+  <img src="gif/interpolation_Froid.gif" alt="Interpolation Froid" width="400">
   <p><em>Exécutez le code pour générer ce GIF</em></p>
 </div>
 
 ### Interpolation dans l'ambiance "Lumineux"
 Transition avec des images très claires et lumineuses.  
 <div align="center">
-  <img src="images/interpolation_Lumineux.gif" alt="Interpolation Lumineux" width="400">
+  <img src="gif/interpolation_Lumineux.gif" alt="Interpolation Lumineux" width="400">
   <p><em>Exécutez le code pour générer ce GIF</em></p>
 </div>
 
 ### Interpolation dans l'ambiance "Neutre"
 Transition avec des couleurs faiblement saturées et neutres.  
 <div align="center">
-  <img src="images/interpolation_Neutre.gif" alt="Interpolation Neutre" width="400">
+  <img src="gif/interpolation_Neutre.gif" alt="Interpolation Neutre" width="400">
   <p><em>Exécutez le code pour générer ce GIF</em></p>
 </div>
 
 ### Interpolation dans l'ambiance "Sombre"
 Transition avec des images très foncées.  
 <div align="center">
-  <img src="images/interpolation_Sombre.gif" alt="Interpolation Sombre" width="400">
+  <img src="gif/interpolation_Sombre.gif" alt="Interpolation Sombre" width="400">
   <p><em>Exécutez le code pour générer ce GIF</em></p>
 </div>
 
 ### Interpolation dans l'ambiance "Végétal"
 Transition avec des tons verts et végétalisés.  
 <div align="center">
-  <img src="images/interpolation_Végétal.gif" alt="Interpolation Végétal" width="400">
+  <img src="gif/interpolation_Végétal.gif" alt="Interpolation Végétal" width="400">
   <p><em>Exécutez le code pour générer ce GIF</em></p>
 </div>
 
-### Espace latent visualisé
-Projection 2D des représentations latentes colorées par classe d'ambiance.  
-<div align="center">
-  <img src="images/espace_latent.png" alt="Espace Latent" width="400">
-  <p><em>Graphique généré automatiquement</em></p>
-</div>
 
 Ces visualisations illustrent la capacité du CVAE à produire de l'art original tout en respectant les contraintes d'ambiance.
 
